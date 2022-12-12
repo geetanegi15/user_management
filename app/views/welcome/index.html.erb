@@ -1,0 +1,8 @@
+<h1>Welcome In Home Page</h1>
+<% if admin_user_signed_in? %>
+    <%= link_to " logout admin " , destroy_admin_user_session_path , method: :delete %>
+<% else %>
+<%= link_to " login admin " , new_admin_user_session_path %>
+<% end %>
+
+

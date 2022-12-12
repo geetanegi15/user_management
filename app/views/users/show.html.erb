@@ -1,0 +1,39 @@
+<h3> USER DETAILS </h3>
+    <table>
+        <tr> <td> FRIST NAME </td>
+            <td> <%= @user.first_name %> </td> 
+        </tr> 
+        <tr>
+            <td> LAST NAME </td> 
+            <td> <%= @user.last_name %></td> 
+        </tr> 
+        <tr>
+            <td>CONTACT </td> <td> 
+            <%= @user.mobile_no %></td> 
+        </tr> 
+        <tr>
+            <td>DATE OF BIRTH</td> 
+            <td> <%= @user.DOB %> </td> 
+        </tr> 
+        <tr>
+             <td>EMAIL ID</td> 
+             <td> <%= @user.mail_id %> </td> 
+        </tr>
+        <tr>
+            <td>ACTIVATE STATUS</td> 
+            <td> <%= @user.activated %> </td>
+        <tr>
+            <td> 
+                <%= link_to "Delete", user_path(@user),data: {
+                 :method => :delete } %>
+            </td>
+             <td>
+                <%= link_to "update", edit_user_path(@user) %>
+            </td>
+        </tr>
+    </table>
+
+<h3> USER ADDRESS </h3>  
+<%= render @user.addresses %>
+</ul>
+

@@ -1,0 +1,35 @@
+<%= form_with model: [ @user, @user.addresses.build ] do |form| %>
+    <div>
+    <%= form.label :Parmanent_address %>
+    <%= form.text_field :parmanent_address %>
+    </div>
+
+    <div>
+    <%= form.label :Residencial_address%>
+    <%= form.text_field :residencial_address %>
+    </div>
+
+    <div>
+    <%= form.label :City%>
+    <%= form.text_field :city %>
+    </div>
+
+    <div>
+    <%= form.label :State %>
+    <%= form.text_field :state %>
+    </div>
+
+    <div>
+    <%= form.label :Country%>
+    <%= form.text_field :country %>
+    </div>
+
+    <div>
+    <%= form.label :Pin %>
+    <%= form.text_field :pin%>
+    </div>    
+
+    <div> 
+    <%= form.submit " create user address " %>
+    </div>   
+<% end %>

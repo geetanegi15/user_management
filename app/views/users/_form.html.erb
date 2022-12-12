@@ -1,0 +1,38 @@
+<%= form_with model: @user do |form| %>
+    <div>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    </div>
+    <div>
+    <%= form.label :First_name %>
+    <%= form.text_field :first_name %>
+    </div>
+
+    <div>
+    <%= form.label :Last_name%>
+    <%= form.text_field :last_name %>
+    </div>
+
+    <div>
+    <%= form.label :Contact %>
+    <%= form.text_field :mobile_no %>
+    </div>
+
+    <div>
+    <%= form.label :DOB %>
+    <%= form.text_field :DOB %>
+    </div>
+
+    <div>
+    <%= form.label :Email%>
+    <%= form.text_field :mail_id %>
+    </div>
+
+    <div>
+    <%= form.label :Activated %>
+    <%= form.text_field :activated %>
+    </div>    
+
+    <div> 
+    <%= form.submit " create user data " %>
+    </div>   
+<% end %>

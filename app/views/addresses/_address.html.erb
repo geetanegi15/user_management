@@ -1,0 +1,38 @@
+<table>
+    <tr><td> PARMANENT ADDRESS </td>
+        <td> <%= address.parmanent_address %> </td>
+    </tr>
+    <tr> 
+        <td> RESIDENCIAL ADDRESS </td>
+        <td> <%= address.residencial_address %> </td>
+    </tr>
+    <tr> 
+        <td> CITY </td>
+        <td> <%= address.city %> </td>
+    </tr>
+    <tr> 
+        <td> STATE </td>
+        <td> <%= address.state %> </td>
+    </tr>
+    <tr> 
+        <td> COUNTRY </td>
+        <td> <%= address.country %> </td>
+    </tr>
+    <tr> 
+        <td> PIN </td>
+        <td> <%= address.pin %> </td>
+    </tr>
+    <tr> 
+        <td> <%#= link_to 'delete' , user_address_path(@user , @a),data: {
+            :method => :delete } %>
+        </td> 
+        <td> <%#= link_to "update address", edit_user_address_path(@user , @addresses) %>
+        </td>
+        </tr>
+        <tr> 
+        <td> <%= link_to 'delete'  %>
+        </td> 
+        <td> <%= link_to "update address" %>
+        </td>
+        </tr>
+</table>
